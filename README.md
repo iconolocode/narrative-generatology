@@ -1,0 +1,2 @@
+# narrative-generatology
+Course assignments
