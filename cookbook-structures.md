@@ -11,26 +11,37 @@
 "5": ["00000 vijf", "00000 cinq", "00000 five"]
 }
 ```
+> 0 one 00 two 000 drie 0000 four 00000 vijf
+ 
+> 0 een 00 deux 000 trois 0000 quatre 00000 five
+
+> 0 een 00 two 000 drie 0000 vier 00000 vijf
 
 ### reordering
 ```json
 {
-	"origin":"#plot#",
-	"plot":[
-		"#1# #2# #3#",
-		"#3# #4# #5#",
-		"#1# #2# #3# #4# #5#",
-		"#5# #4# #3# #2# #1#",
-		"#1# #3# #5#",
-		"#3# #1# #2# #5#"
-	],
-	"1":["0 een","0 un","0 one"],
-	"2":["00 twee","00 deux","00 two"],
-	"3":["000 drie","000 trois","000 three"],
-	"4":["0000 vier","0000 quatre","0000 four"],
-	"5":["00000 vijf","00000 cinq","00000 five"]
+"origin":"#plot#",
+"plot":[
+	"#1# #2# #3#",
+	"#3# #4# #5#",
+	"#1# #2# #3# #4# #5#",
+	"#5# #4# #3# #2# #1#",
+	"#1# #3# #5#",
+	"#3# #1# #2# #5#"
+],
+"1":["0 een","0 un","0 one"],
+"2":["00 twee","00 deux","00 two"],
+"3":["000 drie","000 trois","000 three"],
+"4":["0000 vier","0000 quatre","0000 four"],
+"5":["00000 vijf","00000 cinq","00000 five"]
 }
 ```
+> 000 three 0000 four 00000 cinq
+
+> 000 drie 0 one 00 deux 00000 five
+
+> 00000 cinq 0000 vier 000 three 00 deux 0 un
+
 ### nested plot structures
 ```json
 {
@@ -69,7 +80,21 @@
 "O": ["O", "OO", "OOO"]
 }
 ```
+> In this story, Only o 000 secondly 00 OO 000 O
+
+> In this story, A because not a, thus BBB and CC, in other words B CC instead of bb cc
+
+> In this story, first aaa bb and b c and again aa bb ccc
+
+> In this story, now A BBB CCC finally AAA B and o 0 OO after this -- ~~ because O
+
+> In this story, In the capital AA B CCC because AAA BBB
+
 ### causal chain
+
+note: the further, the rarer.
+tip: by multiplying an option, it has more chance to happen (`["two #3#", "two #3#", "two #3#", ""]` the "" to break the chain has less chance to happen now)
+
 ```json
 {
 "origin":"#1#",
@@ -84,6 +109,11 @@
 "9":["nine", ""]
 }
 ```
+> one two
+
+> one two three four five
+
+> one
 
 ## loops
 
@@ -92,9 +122,14 @@ don't forget an end exit
 ```json
 {
 "origin": "#loop#",
-"loop": ["o#loop#", "0#loop#", "O#loop#", ""]
+"loop": ["o.#loop#", "0.#loop#", "O.#loop#", ""]
 }
 ```
+> 0.o.0.0.o.O.
+
+> O.o.O.0.O.O.0.0.0.0.o.O.O.0.
+
+> 0.0.O.
 
 ### some variation
 ```json
@@ -110,8 +145,13 @@ don't forget an end exit
 ""]
 }
 ```
+> 0.oo.
 
-### extra variation
+> 0.OoO.O00.
+
+> o0.Ooo.0.
+
+### constrained variation
 ```json
 {
 "origin": "#[symbol:#pattern#]loop#",
@@ -125,11 +165,16 @@ don't forget an end exit
 ""]
 }
 ```
+> 0.00.0.
+
+> 000.00.
+
+> ooo.ooo.oo.o.o.ooo.ooo.ooo.
 
 ### with memory
 ```JSON
 {
-"origin":"#[mode:#language#]greeting#",
+""origin":"#[language:#mode#]greeting#",
 
 "greeting": [
 "#language# #people#! #greeting#",
@@ -138,9 +183,14 @@ don't forget an end exit
 
 "people":["World", "Sybelle", "Molly", "Fanny"],
 
-"language":["#NL#","#EN#","#FR#"],
+"mode":["#NL#","#EN#","#FR#"],
 "NL":"Hallo",
 "EN":"Hello",
 "FR":"Bonjour"
 }
 ```
+> Bonjour World! Bonjour !!!
+
+> Bonjour World! Bonjour! Bonjour World! Bonjour! Bonjour !!!
+
+> Hello World! Hello Fanny! Hello !!!
