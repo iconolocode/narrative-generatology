@@ -174,7 +174,7 @@ don't forget an end exit
 ### with memory
 ```JSON
 {
-""origin":"#[language:#mode#]greeting#",
+"origin":"#[language:#mode#]greeting#",
 
 "greeting": [
 "#language# #people#! #greeting#",
