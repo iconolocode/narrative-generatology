@@ -194,3 +194,84 @@ don't forget an end exit
 > Bonjour World! Bonjour! Bonjour World! Bonjour! Bonjour !!!
 
 > Hello World! Hello Fanny! Hello !!!
+
+## Probabilities
+### simple probabilities
+```json
+{
+"origin": "#probability#",
+"rareSymbol": "*",
+"probability": ["#rareSymbol#","","","",""]
+}
+```
+Rare symbol has a probability of one chance of five to happen
+
+### memorize probability options
+```json
+{
+"origin": "#[rare:#rareSymbol#][common:#commonSymbol#]array#",
+"rareSymbol": ["*", "$", "@"],
+"commonSymbol": [".",",","-"],
+"array": "#p# #p# #p# #p# #p# #p# #p# #p# #p# #p# ",
+"p": ["#rare#","#common#","#common#","#common#","#common#"]
+}
+```
+> - - - - - * - - * -
+
+> , @ @ , , , , , , ,
+
+> $ - $ $ - - - - - -
+
+## formatting
+
+### general
+
+- HTML tags / inline css can be incorporated
+- To make linebreaks use </br>
+
+### mini template
+```json
+{
+"origin": "<center>#verse#</br>#verse#</br>#verse#</br>#verse#</br>#verse#</br></center>",
+"verse": [
+"#sound#",
+"#sound##sound#",
+"#sound##sound#"
+],
+"sound": ["li", "...", "lalala", "LalalLaLa", "LALALA"]
+}
+```
+
+### apply tags
+```json
+{
+"origin": "#formatting#",
+"formatting": [
+"<b>#greeting#</b>",
+"<i>#greeting#</i>",
+"<u>#greeting#</u>",
+"<h2>#greeting#</h2>",
+],
+"greeting": ["hello", "bonjour", "hallo"]
+}
+```
+> <b>bonjour</b>
+
+> <u>hallo</u>
+
+> <i>bonjour</i>
+
+### escaping characters
+double quotes are needed and recignized both in the JSON and HTML syntax.
+Use the double quotes for the Tracery grammar, and inside the strings use single quotes or escape the double quotes with a backslash.
+```json
+{
+"origin": "#formatting#",
+"formatting": [
+"<font color = 'red' >#greeting#</font>",
+"<font color = \"blue\" >#greeting#</font>",
+"<font color = \\\"lightgreen\\\" >#greeting#</font>"
+],
+"greeting": ["hello", "bonjour", "hallo"]
+}
+```
