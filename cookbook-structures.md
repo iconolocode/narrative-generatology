@@ -1,6 +1,10 @@
 # Tracery Grammar: a cookbook of handy structures
 
 ---
+## Tips
+- Place the origin at the end while working on the grammar, so that the editor gets less parsing errors
+
+---
 ## sequence
 ### order
 ```
@@ -96,7 +100,8 @@
 ### causal chain
 
 note: the further, the rarer.
-tip: by multiplying an option, it has more chance to happen (`["two #3#", "two #3#", "two #3#", ""]` the "" to break the chain has less chance to happen now)
+
+tip: by multiplying an option, it has more chance to happen (`["two #3#", "two #3#", "two #3#", ""]` the "" to break the chain has less chance to happen now). See section about probabilities.
 
 ```json
 {
@@ -176,6 +181,11 @@ don't forget an end exit
 > ooo.ooo.oo.o.o.ooo.ooo.ooo.
 
 ### with memory
+
+note: Memory only gets saved when the parser comes accross it, not at the start.
+
+tip: You may want to initialize the variables to save at the start, by placing it at origin
+
 ```JSON
 {
 "origin":"#[language:#mode#]greeting#",
