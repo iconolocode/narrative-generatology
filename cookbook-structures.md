@@ -1,7 +1,7 @@
-# Tracery Grammar: a cookbook of handy structures#
+# Tracery Grammar: a cookbook of handy structures
 
 ---
-# sequence
+## sequence
 ### order
 ```
 {
