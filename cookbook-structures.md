@@ -1,4 +1,7 @@
-## sequence
+# Tracery Grammar: a cookbook of handy structures#
+
+---
+# sequence
 ### order
 ```
 {
@@ -115,6 +118,7 @@ tip: by multiplying an option, it has more chance to happen (`["two #3#", "two #
 
 > one
 
+---
 ## loops
 
 ### simple
@@ -195,6 +199,7 @@ don't forget an end exit
 
 > Hello World! Hello Fanny! Hello !!!
 
+---
 ## Probabilities
 ### simple probabilities
 ```json
@@ -222,6 +227,7 @@ Rare symbol has a probability of one chance of five to happen
 
 > $ - $ $ - - - - - -
 
+---
 ## formatting
 
 ### general
