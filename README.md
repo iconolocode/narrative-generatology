@@ -1,2 +1,1 @@
-# narrative-generatology
-Course assignments
+# Tracery for generative narratology
