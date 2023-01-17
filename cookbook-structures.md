@@ -176,14 +176,14 @@ don't forget an end exit
 ```json
 {
 "origin": "#loop#",
-"loop": ["o.#loop#", "0.#loop#", "O.#loop#", ""]
+"loop": ["o.#loop#", ""]
 }
 ```
-> 0.o.0.0.o.O.
+> o.o.
 
-> O.o.O.0.O.O.0.0.0.0.o.O.O.0.
+> o.o.o.o.o.o.o.
 
-> 0.0.O.
+> o.
 
 ### some variation
 ```json
