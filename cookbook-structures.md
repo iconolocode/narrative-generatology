@@ -286,6 +286,7 @@ tip: You may want to initialize the variables to save at the start, by placing i
 "#[settingname:#greeksettingname#][location:#greeklocations#]greekgods#",
 "#[settingname:#norsesettingname#][location:#norselocations#]norsegods#",
 "#[settingname:#konosubasettingname#][location:#konosubalocations#]konosubagoddess#"],
+
 "greeksettingname": "Olympian Pantheon",
 "greeklocations": ["Rome", "Athens", "Troy", "Mount Olympus", "Minos' labyrinth", "The underworld"],
 "greekgods": [
@@ -294,17 +295,18 @@ tip: You may want to initialize the variables to save at the start, by placing i
 "#[godname:#greekname3#][attribute:#greekattribute3#]sentence#"
 ],
 "greekname1": ["Zeus", "Jupiter"],
-"greekattribute1": "thunder",
+"greekattribute1": ["thunder", "the sky", "gods"],
 "greekname2" : "Athena",
 "greekattribute2": "wisdom",
 "greekname3" : "Hades",
 "greekattribute3": "death",
+
 "konosubasettingname": "novel Konosuba",
 "konosubalocations": ["Heaven", "Belzerg", "Arcanletia"],
-"konosubagoddess":
-"#[godname:#konosubaname#][attribute:#konosubaattribute#]sentence#",
+"konosubagoddess": "#[godname:#konosubaname#][attribute:#konosubaattribute#]sentence#",
 "konosubaname": "Aqua",
 "konosubaattribute": "Water",
+
 "norsesettingname": "Norse Mythology",
 "norselocations": ["Yggdrasil", "Hel", "Valhalla"],
 "norsegods": [
@@ -316,6 +318,7 @@ tip: You may want to initialize the variables to save at the start, by placing i
 "norsename2" : "Freya",
 "norseattribute2": "fertility",
 "sentence": ["In the #settingname#, #godname# is the god of #attribute#. #location# is a place in #settingname#. #nested#. #nested#."],
+
 "nested": ["This story happens in #location#", "#godname# is in #location#", "#godname# goes to #location#", "#godname# departs from #location#", "Terrible things will happen in #location#", "Thus begins #godname#'s story", "#nested#. #nested#. #nested#"]
 }
 ```
