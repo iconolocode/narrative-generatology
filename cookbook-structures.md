@@ -264,7 +264,7 @@ tip: You may want to initialize the variables to save at the start, by placing i
 "#[godname:#greekname3#][attribute:#greekattribute3#]sentence#"
 ],
 "greekname1": ["Zeus", "Jupiter"],
-"greekattribute1": "thunder",
+"greekattribute1": ["thunder", "the sky", "gods"],
 "greekname2" : "Athena",
 "greekattribute2": "wisdom",
 "greekname3" : "Hades",
