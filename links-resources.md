@@ -3,12 +3,18 @@
 ## Editors
 
 http://tracery.io/editor/ by Kate Compton
+(click on the "json" dropdown button to get a visual view of it. Going back to the "json" view will reformat the grammar)
 
 https://www.brightspiral.com/tracery/ by Kate Compton
 
 https://artbot.club/ by Kate Compton
+(has a GUI to edit the grammar, double click on colored words)
 
 https://beaugunderson.com/tracery-writer/ by Beau Gunderson
+(can save the grammar into the url)
+
+https://martinpi.github.io/EphemeralWriter/ by Martin Pichlmair
+(other syntax, less brackets and quotes, click on "Convert" to get Json)
 
 ## Grammar tutorials
 
